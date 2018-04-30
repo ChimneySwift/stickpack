@@ -6,7 +6,7 @@
 
 `./textures/army_barbedwire.png`: from [Dan Duncombe's army mod for Minetest](https://forum.minetest.net/viewtopic.php?pid=116232) under the [CC-BY-SA license](https://creativecommons.org/licenses/by-sa/2.0/)
 
-`./textures/stick_*.png`: Made by GreenDimond under [MIT license](https://opensource.org/licenses/MIT)
+`./textures/stick_*.png`: Made by GreenDimond under the [MIT license](https://opensource.org/licenses/MIT)
 
 # Sounds
 
