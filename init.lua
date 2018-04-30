@@ -234,7 +234,7 @@ end
 
 stickpack.register_stick("ripstick", {
     description = "RIPstick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_rip.png",
     on_use = function(itemstack, player, pointed_thing)
         -- modify object's HP directly to bypass armor, etc
         if pointed_thing.type == "object" and pointed_thing.ref:get_hp() > 0 then
@@ -252,7 +252,7 @@ stickpack.register_stick("ripstick", {
 
 stickpack.register_stick("springy_stick", {
     description = "Springy Stick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_springy.png",
     on_use = function(itemstack, player, pointed_thing)
         if pointed_thing.type == "object" and pointed_thing.ref:is_player() then
             minetest.chat_send_player(pointed_thing.ref:get_player_name(), "You have been hit with a Springy Stick! Yay!")
@@ -270,7 +270,7 @@ stickpack.register_stick("springy_stick", {
 
 stickpack.register_stick("lead_stick", {
     description = "Lead Stick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_lead.png",
     on_use = function(itemstack, player, pointed_thing)
         if pointed_thing.type == "object" and pointed_thing.ref:is_player() then
             minetest.chat_send_player(pointed_thing.ref:get_player_name(), "You have been hit with a Lead Stick, rip.")
@@ -323,7 +323,7 @@ end
 
 stickpack.register_stick("litstick", {
     description = "Litstick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_lit.png",
     on_use = function(itemstack, player, pointed_thing)
         local name = player:get_player_name()
         if pointed_thing.type == "object" and pointed_thing.ref:is_player() and (not stickpack.limited[name]) then
@@ -373,7 +373,7 @@ stickpack.sadstick_old_skins = {}
 
 stickpack.register_stick("sadstick", {
     description = "Sadstick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_sad.png",
     on_use = function(itemstack, player, pointed_thing)
         local name = player:get_player_name()
         if pointed_thing.type == "object" and pointed_thing.ref:is_player() and (not stickpack.limited[name]) then
@@ -407,7 +407,7 @@ stickpack.register_stick("sadstick", {
 
 stickpack.register_stick("knockback_stick", {
     description = "Knockback Stick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_knockback.png",
     on_use = function(itemstack, player, pointed_thing)
         if pointed_thing.type == "object" then
             local hit_thing = pointed_thing.ref
@@ -438,7 +438,7 @@ stickpack.register_stick("knockback_stick", {
 
 stickpack.register_stick("1000_degree_stick", {
     description = "1000 Degree Stick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_1000degree.png",
     on_use = function(itemstack, player, pointed_thing)
         if pointed_thing.type == "object" and pointed_thing.ref:is_player() then
             local hit_player = pointed_thing.ref
@@ -463,7 +463,7 @@ stickpack.register_stick("1000_degree_stick", {
 
 stickpack.register_stick("rickstick", {
     description = "Rickstick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_rick.png",
     on_use = function(itemstack, player, pointed_thing)
         local name = player:get_player_name()
         if pointed_thing.type == "object" and pointed_thing.ref:is_player() and not stickpack.limited[name] then
@@ -595,7 +595,7 @@ end
 
 stickpack.register_stick("trumpstick", {
     description = "Trumpstick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_trump.png",
     on_use = function(itemstack, player, pointed_thing)
         if pointed_thing.type == "node" then
             minetest.sound_play({pos = pos, name = "default_place_node_metal", gain = 0.5, max_hear_distance = 5})
@@ -610,7 +610,7 @@ stickpack.register_stick("trumpstick", {
 
 stickpack.register_stick("clearstick", {
     description = "Clearstick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_clear.png",
     on_use = function(itemstack, player, pointed_thing)
         local can_use = stickpack.priv_check(player, itemstack, "clearstick")
         if can_use then
@@ -652,7 +652,7 @@ stickpack.register_stick("clearstick", {
 
 stickpack.register_stick("lavastick", {
     description = "Lavastick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_lava.png",
     on_use = function(itemstack, player, pointed_thing)
         local name = player:get_player_name()
         local inv = player:get_inventory()
@@ -713,7 +713,7 @@ end
 
 stickpack.register_stick("godstick", {
     description = "Godstick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_god.png",
     on_use = function(itemstack, player, pointed_thing)
         local pos = player:get_pos()
         local objs = nil
@@ -734,7 +734,7 @@ stickpack.register_stick("godstick", {
 
 stickpack.register_stick("summoner_stick", {
     description = "Summoner Stick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_summoner.png",
     range = 100,
     on_use = function(itemstack, player, pointed_thing)
         if pointed_thing.type == "object" then
@@ -749,7 +749,7 @@ stickpack.register_stick("summoner_stick", {
 
 stickpack.register_stick("icestick", {
     description = "Icestick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_ice.png",
     on_use = function(itemstack, player, pointed_thing)
         local name = player:get_player_name()
         if pointed_thing.type == "object" and pointed_thing.ref:is_player() and (not stickpack.limited[name]) then
@@ -794,7 +794,7 @@ stickpack.register_stick("icestick", {
 
 stickpack.register_stick("firestick", {
     description = "Firestick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_fire.png",
     on_use = function(itemstack, player, pointed_thing)
         if pointed_thing.type == "node" then
             local name = player:get_player_name()
@@ -822,7 +822,7 @@ local reasons = {
 
 stickpack.register_stick("kickstick", {
     description = "Kickstick",
-    inventory_image = "default_stick.png",
+    inventory_image = "stick_kick.png",
     on_use = function(itemstack, player, pointed_thing)
         if pointed_thing.type == "object" and pointed_thing.ref:is_player() then
             minetest.kick_player(pointed_thing.ref:get_player_name(), reasons[math.random(1, table.length(reasons))])
