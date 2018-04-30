@@ -7,7 +7,7 @@ Adds a selection of useful or comedic sticks to Minetest.
 
 **Dependencies:** default
 
-**Contributors:** GreenDimond (ideas, ...)
+**Contributors:** GreenDimond (ideas, textures)
 
 ## Stick List
 
