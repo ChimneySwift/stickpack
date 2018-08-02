@@ -829,3 +829,5 @@ stickpack.register_stick("kickstick", {
         end
     end,
 })
+
+dofile(minetest.get_modpath("stickpack").."/crafts.lua")
